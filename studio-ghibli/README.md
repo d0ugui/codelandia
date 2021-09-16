@@ -1,4 +1,4 @@
-<img align="center" src="/assets/tela.png" alt="Studio Ghibli">
+<img align="center" src="assets/tela.png" alt="Studio Ghibli">
 
 ## 📖 Projeto
 
