@@ -1,4 +1,4 @@
-<img align="center" src="/assets/tela.gif" alt="Projetos">
+<img align="center" src="tela.gif" alt="Projetos">
 
 ## 📖 Projeto
 
