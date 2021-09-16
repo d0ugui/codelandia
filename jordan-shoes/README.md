@@ -1,4 +1,4 @@
-<img align="center" src="/assets/tela.png" alt="Jordan Shoes">
+<img align="center" src="assets/tela.png" alt="Jordan Shoes">
 
 ## 📖 Projeto
 
