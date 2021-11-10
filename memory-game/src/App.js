@@ -1,24 +1,26 @@
+import { useState } from 'react';
+
 import { GlobalStyle } from './styles/global';
+import { Container, CardGrid } from './styles';
 
 function App() {
+  const [stage, setStage] = useState(10);
+
+  function handleChange(e) {
+    setStage(e.target.value);
+  }
+
   return (
     <>
       <GlobalStyle />
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Container>
+        <h1>Jogo da memória</h1>
+        <select id="stage" onChange={(e) => handleChange(e)}>
+          <option value="10">Nível fácil</option>
+          <option value="14">Nível médio</option>
+          <option value="18">Nível difícil</option>
+        </select>
+      </Container>
     </>
   );
 }
