@@ -6,6 +6,7 @@ Este repositório contém desafios propostos pelo [Iuri Silva](https://www.insta
 
 - Jordan Shoes
 - Studio Ghibli
+- Hallowen Memory Game
 
 ## 📝 Informações
 
