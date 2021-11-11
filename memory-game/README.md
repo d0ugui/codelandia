@@ -1,6 +1,6 @@
-<!-- <p align="center">
+<p align="center">
   <img alt="Memory Game" src="src/assets/tela.png" width="100%">
-</p> -->
+</p>
 
 ## 📖 Projeto
 
