@@ -1,6 +1,6 @@
 import Cover from '../../assets/cover.png';
 
-import './styles.css';
+import { Container, CardFlipped } from './styles';
 
 export function SingleCard({ card, handleChoice, flipped, disabled }) {
   function handleClick() {
@@ -10,13 +10,13 @@ export function SingleCard({ card, handleChoice, flipped, disabled }) {
   }
 
   return (
-    <div>
-      <div className="card">
-        <div className={flipped ? "flipped" : ""}>
-          <img className="front" src={card.src} alt="card Front" />
-          <img className="back" src={Cover} onClick={handleClick} alt="card back" />
-        </div>
-      </div>
-    </div>
+
+    <Container>
+      <CardFlipped className={flipped ? "flipped" : ""}>
+        <img className="front" src={card.src} alt="card front" />
+        <img className="back" src={Cover} onClick={handleClick} alt="card back" />
+      </CardFlipped>
+    </Container>
+
   )
 }
