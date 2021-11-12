@@ -6,6 +6,8 @@ import Witch from './assets/witch.svg';
 import Coffin from './assets/coffin.svg';
 import Zumbi from './assets/zumbi.svg';
 import Pumpkin from './assets/pumpkin.svg';
+import Eye from './assets/eye.svg';
+import Book from './assets/book.svg';
 
 import { GlobalStyle } from './styles/global';
 import { Container, CardGrid } from './styles';
@@ -18,10 +20,12 @@ function App() {
     { src: Witch, matched: false },
     { src: Coffin, matched: false },
     { src: Zumbi, matched: false },
-    { src: Pumpkin, matched: false }
+    { src: Pumpkin, matched: false },
+    { src: Eye, matched: false },
+    { src: Book, matched: false },
   ];
 
-  const [stage, setStage] = useState(10);
+  const [hard, setHard] = useState(false);
   const [cards, setCards] = useState([]);
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
@@ -29,7 +33,7 @@ function App() {
 
   //* shuffleCards
   function shuffleCards() {
-    const shuffledCards = [...cardImages, ...cardImages]
+    const shuffledCards = (hard ? [...cardImages, ...cardImages, ...cardImages] : [...cardImages, ...cardImages])
       .sort(() => Math.random() - 0.5)
       .map((card) => ({ ...card, id: Math.random() }));
 
@@ -74,11 +78,11 @@ function App() {
   //* start a new game automatically
   useEffect(() => {
     shuffleCards();
-  }, [])
+  }, [hard])
 
   //* setStage dificult
   function handleChange(e) {
-    setStage(e.target.value);
+    setHard(e.target.value);
   }
 
   return (
@@ -87,9 +91,8 @@ function App() {
       <Container>
         <h1>Jogo da memória</h1>
         <select id="stage" onChange={(e) => handleChange(e)}>
-          <option value="10">Nível fácil</option>
-          <option value="14">Nível médio</option>
-          <option value="18">Nível difícil</option>
+          <option value="16">Nível fácil</option>
+          <option value="24">Nível difícil</option>
         </select>
         <CardGrid>
           {cards.map((card) => (
