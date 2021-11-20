@@ -1,12 +1,17 @@
+import { useState } from 'react';
+
 import Cover from '../../assets/cover.png';
 
 import { Container, CardFlipped } from './styles';
 
 export function SingleCard({ card, handleChoice, flipped, disabled }) {
+  const [clicked, setClicked] = useState(null);
+
   function handleClick() {
-    if (!disabled) {
+    if (!disabled && !clicked) {
       handleChoice(card);
     }
+    setTimeout(() => setClicked(false), 500);
   }
 
   return (
