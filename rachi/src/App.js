@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { Plans } from './components/Plans';
 import { Store } from './components/Store';
 import { Works } from './components/Works';
+import { Footer } from './components/Footer';
 
 import { GlobalStyle } from './styles/global';
 
@@ -11,12 +12,13 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Header />
+      <Header id="home" />
       <Hero />
-      <Works />
-      <Store />
-      <Plans />
-      <Contact />
+      <Works id="works" />
+      <Store id="apps" />
+      <Plans id="plans" />
+      <Contact id="contact" />
+      <Footer />
     </>
   );
 }

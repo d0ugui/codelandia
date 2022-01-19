@@ -2,7 +2,7 @@ import { Button } from '../Button';
 
 import { Container } from './styles';
 
-export function Card({ title, special }) {
+export function Card({ title, value, special }) {
   return (
     <Container special={special}>
       <h3>{title}</h3>
@@ -14,7 +14,7 @@ export function Card({ title, special }) {
         )}
       <div>
         <span>R$</span>
-        <span>28</span>
+        <span>{value ? `${value}` : '28'}</span>
         <span>/mês</span>
       </div>
       <p>

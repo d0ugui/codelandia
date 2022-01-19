@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import background from '../../assets/background.png';
 
 export const Container = styled.section`
-  width: 100vw;
+  width: 100%;
   background: url(${background}) no-repeat;
   /* background-attachment: fixed; */
   background-size: cover;

@@ -13,8 +13,8 @@ export function Plans() {
       </p>
       <Cards>
         <Card title="Bronze" />
-        <Card title="Prata" special="true" />
-        <Card title="Ouro" />
+        <Card title="Prata" value="57" special="true" />
+        <Card title="Ouro" value="94" />
       </Cards>
     </Container>
   );
