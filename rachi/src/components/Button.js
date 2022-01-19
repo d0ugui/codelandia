@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Button = styled.button`
   width: 200px;
@@ -20,4 +20,12 @@ export const Button = styled.button`
   &:hover {
     filter: brightness(0.8);
   }
+
+  ${({ card }) => css`
+    height: ${card && '43px'};
+    margin-top: ${card && '58px'};
+    margin-bottom: ${card && '64px'};
+    padding: ${card && '0 70px'};
+
+  `};
 `;

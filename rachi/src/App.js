@@ -1,5 +1,6 @@
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
+import { Plans } from './components/Plans';
 import { Store } from './components/Store';
 import { Works } from './components/Works';
 
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Works />
       <Store />
+      <Plans />
     </>
   );
 }

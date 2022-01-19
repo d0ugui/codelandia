@@ -24,5 +24,6 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'import/prefer-default-export': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
+    'react/prop-types': 'off',
   },
 };

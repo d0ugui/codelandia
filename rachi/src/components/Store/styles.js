@@ -29,9 +29,14 @@ export const Content = styled.div`
     }
 
     div {
-      img + img {
+      a {
+        & + a {
         margin-left: 25px;
-        margin-top: 35px;
+        }
+
+        img {
+          margin-top: 35px;
+        }
       }
     }
   }

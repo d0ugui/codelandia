@@ -16,8 +16,12 @@ export function Store() {
             ipsum autem asperiores quaerat a? Ad, accusamus asperiores.
           </p>
           <div>
-            <img src={google} alt="Play Store" />
-            <img src={apple} alt="Apple Store" />
+            <a href="#">
+              <img src={google} alt="Play Store" />
+            </a>
+            <a href="#">
+              <img src={apple} alt="Apple Store" />
+            </a>
           </div>
         </div>
 
