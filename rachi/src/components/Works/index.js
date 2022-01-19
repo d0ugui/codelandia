@@ -6,7 +6,7 @@ import happy from '../../assets/happy.svg';
 
 import { Container } from './styles';
 
-export function HowItWorks() {
+export function Works() {
   return (
     <Container>
       <Title>

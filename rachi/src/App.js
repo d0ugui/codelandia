@@ -1,6 +1,7 @@
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
-import { HowItWorks } from './components/HowItWorks';
+import { Store } from './components/Store';
+import { Works } from './components/Works';
 
 import { GlobalStyle } from './styles/global';
 
@@ -10,7 +11,8 @@ function App() {
       <GlobalStyle />
       <Header />
       <Hero />
-      <HowItWorks />
+      <Works />
+      <Store />
     </>
   );
 }
