@@ -1,3 +1,4 @@
+import { Contact } from './components/Contact';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Plans } from './components/Plans';
@@ -15,6 +16,7 @@ function App() {
       <Works />
       <Store />
       <Plans />
+      <Contact />
     </>
   );
 }
