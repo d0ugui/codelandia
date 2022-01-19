@@ -58,6 +58,7 @@ export const Container = styled.div`
     font-size: 18px;
     padding: 0 35px;
     margin-top: 47px;
+    color: ${({ special }) => (special ? '#DBDBDB' : '#6E7275')};
   }
 
 `;
