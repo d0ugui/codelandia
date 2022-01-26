@@ -25,9 +25,14 @@ export const Container = styled.div`
 
 export const Cards = styled.div`
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
   gap: 30px;
   margin-top: 96px;
   margin-bottom: 130px;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
 `;

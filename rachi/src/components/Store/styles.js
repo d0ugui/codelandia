@@ -44,4 +44,30 @@ export const Content = styled.div`
   div + div {
     margin: 37px 0;
   }
+
+  @media (max-width: 996px) {
+    flex-direction: column;
+    padding: 30px 0;
+
+    & > div {
+      align-items: center;
+
+      p {
+        width: 100%;
+        text-align: center;
+      }
+
+      & > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    div:nth-child(2) {
+      order: -1;
+    }
+
+
+  }
 `;
