@@ -63,4 +63,10 @@ export const Content = styled.div`
     }
   }
 
+  @media (max-width: 996px) {
+    p {
+      width: 60%;
+    }
+  }
+
 `;

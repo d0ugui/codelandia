@@ -6,6 +6,10 @@ export const Container = styled.section`
 
   display: flex;
   justify-content: center;
+
+  @media (max-width: 996px) {
+    height: auto;
+  }
 `;
 
 export const Content = styled.div`
@@ -26,5 +30,17 @@ export const Content = styled.div`
 
   button {
     margin-top: 50px;
+  }
+
+  @media (max-width: 996px) {
+    flex-direction: column;
+
+    img {
+      order: -1;
+    }
+
+    button {
+      margin-bottom: 50px;
+    }
   }
 `;

@@ -5,19 +5,27 @@ export const Container = styled.section`
   max-width: 70%;
   margin: 0 auto;
 
-  height: 476px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
+  h2 {
+    margin-top: 56px;
+  }
+
   ul {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 109px;
 
     li {
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       padding: 60px;
 
       img {
