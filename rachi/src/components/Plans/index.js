@@ -5,7 +5,7 @@ import { Container, Cards } from './styles';
 
 export function Plans() {
   return (
-    <Container>
+    <Container id="plans">
       <Title>Nossos planos</Title>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia

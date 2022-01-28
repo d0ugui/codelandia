@@ -21,6 +21,7 @@ export const Container = styled.header`
           font-size: 18px;
           font-weight: 500;
           font-family: 'Inter', sans-serif;
+          cursor: pointer;
         }
       }
 

@@ -8,7 +8,7 @@ import { Container } from './styles';
 
 export function Works() {
   return (
-    <Container>
+    <Container id="works">
       <Title>
         Como funciona
       </Title>

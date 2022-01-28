@@ -6,7 +6,7 @@ import { Container, Content } from './styles';
 
 export function Store() {
   return (
-    <Container>
+    <Container id="app">
       <Content>
         <div>
           <h2>Baixe nosso app para desfrutar mais!</h2>

@@ -5,7 +5,7 @@ import { Container, Content } from './styles';
 
 export function Contact() {
   return (
-    <Container>
+    <Container id="contact">
       <Content>
         <Title>Contato</Title>
         <p>
