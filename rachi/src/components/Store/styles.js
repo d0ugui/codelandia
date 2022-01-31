@@ -15,6 +15,8 @@ export const Content = styled.div`
   justify-content: space-between;
 
   & > div {
+    width: 80%;
+
     h2 {
       font-size: 32px;
       font-family: 'Sora', sans-serif;
@@ -52,6 +54,10 @@ export const Content = styled.div`
     & > div {
       align-items: center;
 
+      h2 {
+        text-align: center;
+      }
+
       p {
         width: 100%;
         text-align: center;
@@ -61,13 +67,36 @@ export const Content = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
+
+        a {
+          & + a {
+          margin-left: 0px;
+          }
+        }
+
+        img {
+          width: 120px;
+        }
       }
     }
 
     div:nth-child(2) {
       order: -1;
     }
+  }
 
+  @media (max-width: 576px) {
+    div:nth-child(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 220px;
+      }
+    }
 
+    & > div {
+
+    }
   }
 `;

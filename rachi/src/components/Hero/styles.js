@@ -35,12 +35,33 @@ export const Content = styled.div`
   @media (max-width: 996px) {
     flex-direction: column;
 
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
     img {
       order: -1;
     }
 
     button {
       margin-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 24px;
+    }
+
+    img {
+      width: 270px;
     }
   }
 `;

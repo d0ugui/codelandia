@@ -69,4 +69,22 @@ export const Content = styled.div`
     }
   }
 
+  @media (max-width: 576px) {
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      input {
+        width: 70%;
+        margin: 0;
+      }
+
+      button {
+        margin-top: 10px;
+      }
+    }
+  }
+
 `;
