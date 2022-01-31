@@ -13,7 +13,7 @@ export const Container = styled.header`
     justify-content: space-between;
 
     ul {
-      display: flex;
+      display: none;
 
       li {
         a {
@@ -27,6 +27,17 @@ export const Container = styled.header`
 
       li + li {
         margin-left: 66px;
+      }
+    }
+  }
+
+  @media (min-width: 996px) {
+    nav {
+      ul {
+        display: flex;
+      }
+      svg {
+        display: none;
       }
     }
   }

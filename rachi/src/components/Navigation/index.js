@@ -1,13 +1,20 @@
-import { FaBars } from 'react-icons/fa';
-import logo from '../../assets/logo.svg';
+import { useEffect } from 'react';
+import { IoClose } from 'react-icons/io5';
+
 import { Container } from './styles';
 
-export function Header({ showMenu, setShowMenu }) {
-  return (
-    <Container>
-      <nav>
-        <img src={logo} alt="Rachi" />
+export function Navigation({ showMenu, setShowMenu }) {
+  useEffect(() => {
+    document.body.style.overflowY = showMenu ? 'hidden' : 'auto';
+  }, [showMenu]);
 
+  return (
+    <Container isVisible={showMenu}>
+      <IoClose
+        size={45}
+        onClick={() => setShowMenu(false)}
+      />
+      <nav>
         <ul>
           <li>
             <a href="#">
@@ -30,13 +37,6 @@ export function Header({ showMenu, setShowMenu }) {
             </a>
           </li>
         </ul>
-
-        { !showMenu && (
-          <FaBars
-            size={28}
-            onClick={() => setShowMenu(true)}
-          />
-        )}
       </nav>
     </Container>
   );
